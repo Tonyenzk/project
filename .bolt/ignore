@@ -1,42 +1,28 @@
-# Ignore node modules and vendor directories
-node_modules/
-vendor/
+# Ignore EVERYTHING by default
+*/
 
-# Ignore build and cache directories
-.cache/
-build/
-dist/
+# Only include these file types
+!*.php
+!*.html
+!*.css
+!*.js
+!*.json
+!*.md
+!*.txt
 
-# Ignore environment and configuration files
-.env
-.env.*
-!.env.example
-
-# Ignore IDE specific files
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
-
-# Ignore OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Ignore logs and debug files
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Ignore uploads and caches
-uploads/
-*.cache
+# But exclude these specific files and directories
+/.git/
+/.bolt/
+/node_modules/
+/vendor/
+/uploads/
+/images/
+/logs/
+/tests/
+/__tests__/
+/build/
+/dist/
+/.cache/
 
 # Ignore large files
 *.zip
@@ -44,45 +30,6 @@ uploads/
 *.gz
 *.rar
 *.7z
-
-# Ignore dependency files
-package-lock.json
-yarn.lock
-composer.lock
-
-# Ignore local development files
-*.local
-*.dev
-
-# Ignore compiled assets
-css/build/
-js/build/
-assets/build/
-
-# Ignore database dumps
-*.sql
-*.dump
-
-# Ignore test files
-__tests__/
-*.test.php
-*.spec.js
-
-# Ignore temporary files
-*.tmp
-*.temp
-*~
-
-# Ignore documentation files
-*.pdf
-*.doc
-*.docx
-*.xls
-*.xlsx
-*.ppt
-*.pptx
-
-# Ignore media files (you might want to keep these if they're part of your project)
 *.mp3
 *.mp4
 *.mov
@@ -105,3 +52,27 @@ __tests__/
 *.eps
 *.indd
 *.raw
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# Include these specific directories
+!/assets/
+!/css/
+!/js/
+!/includes/
+!/modals/
+
+# But exclude these specific patterns in included directories
+**/node_modules/
+**/vendor/
+**/build/
+**/dist/
+**/cache/
+**/*.min.*
+**/*.map
+**/*.log
