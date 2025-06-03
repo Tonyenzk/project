@@ -1,0 +1,165 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Social Land Application Structure
+
+## Directory Structure
+- `/` - Root directory containing main PHP files
+- `/api` - API endpoints and backend services
+- `/assets` - Static assets like images and icons
+- `/config` - Configuration files and database settings
+- `/css` - Stylesheet files
+- `/database` - Database related files and migrations
+- `/includes` - Reusable PHP components and functions
+- `/js` - JavaScript files and client-side logic
+- `/logs` - Application logs
+- `/modals` - Modal components and templates
+- `/uploads` - User uploaded content
+- `/utils` - Utility functions and helper classes
+- `/websocket` - WebSocket server and handlers
+- `/vendor` - Composer dependencies
+- `/node_modules` - Node.js dependencies
+- `/admin` - Administrative interface
+- `/bin` - Executable scripts
+- `/server` - Server-side scripts
+- `/fonts` - Font files
+- `/images` - Image assets
+
+## Key Files
+### Main Pages
+- `dashboard.php` - Main dashboard interface
+- `profile.php` - User profile page
+- `explore.php` - Content discovery page
+- `events.php` - Events management
+- `postview.php` - Post viewing and interaction
+- `activity.php` - User activity feed
+- `location.php` - Location-based features
+- `user.php` - User management
+- `maintenance.php` - Maintenance mode page
+- `banned.php` - User ban page
+
+### Authentication
+- `login.php` - User login
+- `register.php` - User registration
+- `verify.php` - Email verification
+- `logout.php` - User logout
+- `edit-profile.php` - Profile editing
+
+### Components
+- `navbar.php` - Navigation bar component
+- `/includes/header.php` - Common header
+- `/includes/create_event.php` - Event creation logic
+- `/includes/submit_story.php` - Story submission logic
+- `/includes/NotificationHelper.php` - Notification system
+- `/includes/get_story.php` - Story retrieval
+- `/includes/like_story.php` - Story interaction
+- `/includes/get_stories.php` - Stories listing
+- `/includes/track_story_view.php` - Story view tracking
+
+### JavaScript
+- `/js/global-init.js` - Global JavaScript initialization
+- `/js/event-modal.js` - Event modal functionality
+- `/js/event-validation.js` - Event form validation
+
+### API Endpoints
+- `/api/notifications.php` - Notification handling
+- `/api/search-users.php` - User search functionality
+- `/api/search_music.php` - Music search and integration
+
+## Features
+
+### User Management
+- User registration and authentication
+- Profile management and editing
+- User verification system
+- User search functionality
+- User banning system
+
+### Content Features
+- Post creation and viewing
+- Story system with view tracking
+- Event creation and management
+- Comment system
+- Like/Unlike functionality
+- Music integration
+
+### Social Features
+- Real-time notifications
+- User activity tracking
+- Location-based features
+- User following system
+- Story interactions
+
+### Administrative Features
+- Admin dashboard
+- User management
+- Content moderation
+- System maintenance
+- Activity logging
+
+## Technical Stack
+- PHP 7.4+
+- MySQL 5.7+
+- Node.js
+- WebSocket server
+- Tailwind CSS
+- Composer for PHP dependencies
+- npm for JavaScript dependencies
+
+## Configuration
+- Database settings in `/config/database.php`
+- Application settings in `/config/config.php`
+- Timezone settings in `/config/timezone.php`
+- Environment variables
+- API keys and secrets
+
+## Security Features
+- CSRF protection
+- Input validation and sanitization
+- Session management
+- Password hashing
+- File upload validation
+- User verification
+- Ban system
+- Maintenance mode
+
+## File Management
+- User uploads in `/uploads`
+- Supported file types: images, videos, documents
+- File size limits configured in PHP settings
+- Secure file handling
+
+## Logging System
+- Application logs in `/logs`
+- Error logging
+- User activity tracking
+- Security event logging
+- Debug logging
+
+## Dependencies
+### PHP Dependencies (composer.json)
+- Core PHP libraries
+- Database connectors
+- Utility packages
+
+### JavaScript Dependencies (package.json)
+- Frontend libraries
+- Build tools
+- Development dependencies
+
+## Development Tools
+- Tailwind CSS configuration
+- Node.js build system
+- Composer package management
+- WebSocket server
+- Development utilities
+
+## Maintenance
+- System maintenance mode
+- Database maintenance
+- Log rotation
+- Cache management
+- Performance monitoring
+

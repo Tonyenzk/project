@@ -1,0 +1,251 @@
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Modal Styles */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    animation: modalAppear 0.3s ease-out;
+}
+
+@keyframes modalAppear {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Navbar Collapse Styles */
+@media (max-width: 1024px) {
+    nav {
+        width: 72px !important;
+    }
+    .nav-text {
+        display: none !important;
+    }
+    .collapsed-text {
+        display: block !important;
+    }
+    nav a, nav button {
+        justify-content: center !important;
+    }
+}
+
+/* Reply Container Styles */
+.reply-container:hover .opacity-0 {
+    opacity: 1 !important;
+} 
+
+/* Story Ring Styles */
+.story-ring {
+    position: relative;
+    padding: 2px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #FCAF45, #E1306C, #833AB4);
+    transition: all 0.2s ease-in-out;
+}
+
+.story-ring::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dark .story-ring::before {
+    background: #000;
+}
+
+.story-ring img {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Gray Ring Style */
+.story-ring-gray {
+    position: relative;
+    padding: 2px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #e5e5e5, #d4d4d4, #a3a3a3);
+    transition: all 0.2s ease-in-out;
+}
+
+.story-ring-gray::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dark .story-ring-gray::before {
+    background: #000;
+}
+
+.story-ring-gray img {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.story-ring-large {
+    padding: 3px;
+}
+
+.story-ring-small {
+    padding: 1.5px;
+}
+
+/* Story Ring Container Styles */
+.story-ring-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-ring-button {
+    position: relative;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.story-ring-button:hover {
+    transform: scale(1.05);
+}
+
+.story-ring-button:active {
+    transform: scale(0.95);
+}
+
+/* Story Ring Profile Styles */
+.story-ring-profile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-ring-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Story Ring Avatar Styles */
+.story-ring-avatar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-ring-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Story Ring Hover Effects */
+.story-ring:hover {
+    transform: scale(1.02);
+}
+
+.story-ring:active {
+    transform: scale(0.98);
+}
+
+/* Story Ring Loading State */
+.story-ring-loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Story Ring Disabled State */
+.story-ring-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    background: linear-gradient(45deg, #ccc, #999);
+}
+
+/* Story Ring Active State */
+.story-ring-active {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Story Ring Responsive Styles */
+@media (max-width: 768px) {
+    .story-ring-large {
+        padding: 2px;
+    }
+    
+    .story-ring-small {
+        padding: 1px;
+    }
+}
+
+@media (max-width: 480px) {
+    .story-ring-large {
+        padding: 1.5px;
+    }
+    
+    .story-ring-small {
+        padding: 0.75px;
+    }
+}

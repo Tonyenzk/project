@@ -1,0 +1,73 @@
+Create an Instagram-like social media platform called "SocialLand" using Laravel for backend and React for frontend with the following specifications:
+
+Core Features:
+1. User Management:
+   - Registration and login with email verification
+   - Profile management (bio, profile picture, settings)
+   - User verification system with badges
+   - Private/public account toggle
+   - Follow/unfollow functionality with approval for private accounts
+
+2. Content Sharing:
+   - Photo posts with captions, location tagging, and user tagging
+   - 24-hour stories with music integration (15-sec music clips, 5-sec without music)
+   - Music selection interface with segment selector for stories
+   - Post and story privacy settings
+
+3. Social Interaction:
+   - Like/unlike posts and comments
+   - Commenting system with nested replies
+   - Follow/unfollow users with notifications
+   - User blocking functionality
+   - Story view tracking
+
+4. Feed and Discovery:
+   - Home feed showing posts from followed users with smart ranking
+   - Explore page for content discovery
+   - Search functionality for users, posts, and locations
+   - Location-based content browsing
+
+5. Notifications:
+   - Real-time notifications for likes, comments, follows
+   - In-app notification center
+   - Email notifications for important events
+
+6. Events System:
+   - Community event creation and management
+   - Event registration and attendance tracking
+   - Prize display for events
+
+7. Administration:
+   - User management (verify, ban, delete)
+   - Content moderation tools
+   - Report handling system
+   - Analytics dashboard with user statistics
+   - System maintenance tools
+
+Technical Requirements:
+1. Backend (Laravel):
+   - RESTful API endpoints for all functionality
+   - Authentication using Laravel Sanctum
+   - Real-time notifications with Laravel Echo and Pusher
+   - Database migrations for MySQL
+   - Secure file storage for uploads
+   - Comprehensive validation and error handling
+
+2. Frontend (React):
+   - Modern, responsive UI with mobile-first approach
+   - Redux for state management
+   - React Router for navigation
+   - Tailwind CSS for styling
+   - Component-based architecture
+   - Axios for API requests
+   - Real-time updates with WebSockets
+
+3. Security Features:
+   - CSRF protection
+   - Input validation
+   - Secure password hashing
+   - Rate limiting
+   - Role-based access control
+   - XSS prevention
+
+Make the UI clean and modern with Instagram-inspired aesthetics but with unique branding elements. Ensure responsive design works well on mobile, tablet, and desktop. Implement proper error handling and loading states throughout the application.
