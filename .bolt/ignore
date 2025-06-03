@@ -1,0 +1,107 @@
+# Ignore node modules and vendor directories
+node_modules/
+vendor/
+
+# Ignore build and cache directories
+.cache/
+build/
+dist/
+
+# Ignore environment and configuration files
+.env
+.env.*
+!.env.example
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore logs and debug files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore uploads and caches
+uploads/
+*.cache
+
+# Ignore large files
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# Ignore dependency files
+package-lock.json
+yarn.lock
+composer.lock
+
+# Ignore local development files
+*.local
+*.dev
+
+# Ignore compiled assets
+css/build/
+js/build/
+assets/build/
+
+# Ignore database dumps
+*.sql
+*.dump
+
+# Ignore test files
+__tests__/
+*.test.php
+*.spec.js
+
+# Ignore temporary files
+*.tmp
+*.temp
+*~
+
+# Ignore documentation files
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# Ignore media files (you might want to keep these if they're part of your project)
+*.mp3
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.flv
+*.mkv
+*.webm
+*.gif
+*.jpg
+*.jpeg
+*.png
+*.svg
+*.ico
+*.webp
+*.bmp
+*.tiff
+*.psd
+*.ai
+*.eps
+*.indd
+*.raw
